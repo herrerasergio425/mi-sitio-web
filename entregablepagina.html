@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Final</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Ejemplo de familia de fuentes */
+            font-size: 16px; /* Ejemplo de tamaño de fuente */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+        .resaltado {
+            background-color: yellow;
+        }
+        .barra-progreso {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            height: 10px;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        .progreso {
+            background-color: lightskyblue;
+            border-radius: 5px;
+            height: 100%;
+        }
+        .progreso-curso {
+            width: 100%;
+        }
+        .progreso-capstone {
+            width: 20%;
+        }
+        .progreso-vida {
+            width: 67%;
+        }
+        h1, h2, p, ul {
+            margin-left: 10px;
+        }
+        .contenedor-progreso {
+            display: flex;
+            align-items: center;
+        }
+        .contenedor-progreso p {
+            margin-right: 10px;
+        }
+        .contenedor-imagen {
+            display: flex;
+            align-items: center;
+        }
+        .contenedor-imagen img {
+            margin-right: 20px;
+        }
+        li {
+            display: list-item; /* Valor por defecto, pero se especifica */
+            width: auto; /* Ajusta el ancho al contenido */
+        }
+        h1 {
+            text-align: center;
+            font-family: serif; /* Otra familia de fuentes */
+            color: green;
+        }
+        p {
+            line-height: 1.5; /* Ejemplo de altura de línea */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="resaltado">Colleen van Lent</h1>
+    <p>One Two Three <span class="resaltado">Your Choice</span></p>
+
+    <h2>Favorite Foods</h2>
+    <ul>
+        <li class="resaltado">Apples</li>
+        <li class="resaltado">Pizza</li>
+        <li class="resaltado">Crab</li>
+        <li class="resaltado">Chocolate Cake</li>
+    </ul>
+
+    <h2>Achievements</h2>
+    <div class="contenedor-progreso">
+        <p>Progress in this course (100%)</p>
+        <div class="barra-progreso">
+            <div class="progreso progreso-curso"></div>
+        </div>
+    </div>
+
+    <div class="contenedor-progreso">
+        <p>Progress in the Specialization capstone (20%)</p>
+        <div class="barra-progreso">
+            <div class="progreso progreso-capstone"></div>
+        </div>
+    </div>
+
+    <div class="contenedor-progreso">
+        <p>Progress in life goals (<span class="resaltado">67%</span>)</p>
+        <div class="barra-progreso">
+            <div class="progreso progreso-vida"></div>
+        </div>
+    </div>
+
+    <h2>More About Me</h2>
+    <p>▼ My Childhood<br>
+        <span class="resaltado">I grew up in Ashtabula Ohio, I lived near Lake Erie and I really miss the sunsets over the water.</span></p>
+
+    <div class="contenedor-imagen">
+        <img src="Screenshot 2025-04-23 163004.png" alt="Descripción de la imagen" style="width: 300px;">
+        <p>This page was created by <span class="resaltado">Your Name</span> & Colleen van Lent. To learn more about web design, visit Intro to Web Design.</p>
+    </div>
+
+</body>
+</html>
